@@ -6,8 +6,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="style.css">
+    <script src="etch.js" defer></script>
     <title>etch-a-sketch</title>
 </head>
 <body>
@@ -21,8 +21,8 @@
                 <input type="number" value="16" class="shadow resolution-input"/>
             </div>
             <div class="tool__color">
-                <div class="shadow color-grid selector__color">
-                    <!-- REPLACE WITH JS -->
+                <div class="shadow color-grid selector__color" id="color-list">
+                    <!-- SET COLOR WITH JS -->
                     <div class="color"></div>
                     <div class="color"></div>
                     <div class="color"></div>
@@ -80,7 +80,7 @@
                     <div class="color"></div>
                     <!-- <div class="color"></div> -->
                 </div>
-                <div class="shadow color-grid selector__opacity">
+                <div class="shadow color-grid selector__opacity" id="opacity-list">
                     <!-- REPLACE WITH JS -->
                     <div class="color"></div>
                     <div class="color"></div>
@@ -118,3 +118,4 @@
     
 </body>
 </html>
+
