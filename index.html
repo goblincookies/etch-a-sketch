@@ -18,7 +18,7 @@
         <div class="tool-bar">
             <div class="tool__grid">
                 <p>GRID</p>
-                <input type="number" value="16" class="shadow resolution-input"/>
+                <input type="number" value="16" class="shadow resolution-input" id="grid-input"/>
             </div>
             <div class="tool__color">
                 <div class="shadow color-grid selector__color" id="color-list">
@@ -95,21 +95,22 @@
                 <a href="">CLEAR GRID</a>
                 <div class="toggle rainbow-mode">
                     <label class="switch">
-                        <input type="checkbox">
+                        <input type="checkbox" id="rainbow-mode" name="rainbow-mode">
                         <span class="slider round"></span>
                     </label>
                     <p>Rainbow <br> Mode</p>
                 </div>
                 <div class="toggle always-draw">
                     <label class="switch">
-                        <input type="checkbox">
+                        <input type="checkbox" id="always-draw" name="always-draw">
                         <span class="slider round"></span>
                     </label>
                     <p>Always <br>Draw</p>
                 </div>
             </div>
         </div>
-        <div class="shadow canvas"></div>
+        <div class="shadow canvas" id="canvas">
+        </div>
     </div>
     
 </body>
