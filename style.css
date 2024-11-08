@@ -155,8 +155,11 @@ input[type=number] {
   filter: drop-shadow(1px 1px 4px #d4d4d4);
 }
 
-.tool__options a {
+#clear-grid {
   font-size: 20px;
+  color: #2362E4;
+  text-decoration: underline;
+  cursor: pointer;
 }
 .tool__options p {
   font-size: 16px;
@@ -183,13 +186,24 @@ input[type=number] {
   background-color: white;
   /* outline: 1px solid lightblue; */
   filter: drop-shadow(1px 1px 4px #ebebeb);
-
+}
+.grid-draw {
+  animation: grid-draw 1s ease-out forwards;
 }
 
 .block:hover {
   z-index: 200;
   outline: 1px solid white;
   filter: drop-shadow(1px 1px 4px #d4d4d4);
+}
+
+.non {
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .shadow {
@@ -262,4 +276,14 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+
+@keyframes grid-draw {
+  0% {
+    outline: 1px solid lightblue;
+  }
+  100% {
+    outline: 0px solid white;
+  }
 }
